@@ -1,6 +1,9 @@
 [build]
-  command = "cd src/vanilla && yarn install && yarn build"
-  publish = "src/vanilla/dist"
+  command = "cd src/nextjs && yarn install && yarn build"
+  publish = "src/nextjs/.next"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
 
 [template.environment]
-  LIFF_ID = "Your LIFF ID which is aquired from LINE Dev Center"
+  LIFF_ID = "2003955939-VvPwKMlb"
